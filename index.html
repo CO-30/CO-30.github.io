@@ -14,27 +14,27 @@
   <meta name="description" content="学ぶ。働く。建てる。暮らす。街と一緒に成長する。" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <title>LIFE CITY</title>
-  <script type="module" crossorigin src="./assets/index-KS7ohuti.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-nAlAbrii.css">
+  <script type="module" crossorigin src="./assets/index-BsebcQhi.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C1jpOuZi.css">
 </head>
 <body>
-  <canvas id="city" aria-label="3Dの街"></canvas>
+  <canvas id="city" aria-label="3Dの街" data-i18n-aria="app.canvas"></canvas>
 
   <header class="hud" aria-live="polite">
     <div class="hud-plate">
-      <span class="hud-item coins" title="まちコイン"><i class="coin" aria-hidden="true"></i><b id="hud-coins">0</b></span>
-      <span class="hud-item" title="人口"><span aria-hidden="true">👥</span><b id="hud-pop">0</b><small>人</small></span>
+      <span class="hud-item coins" title="まちコイン" data-i18n-title="hud.coins"><i class="coin" aria-hidden="true"></i><b id="hud-coins">0</b></span>
+      <span class="hud-item" title="人口" data-i18n-title="hud.pop"><span aria-hidden="true">👥</span><b id="hud-pop">0</b><small data-i18n="hud.people">人</small></span>
       <span class="hud-item date" id="hud-date">1年目 4月1日</span>
     </div>
-    <button class="hud-btn" id="btn-speed" aria-label="時間の進み方">▶</button>
-    <button class="hud-btn" id="btn-menu" aria-label="メニュー">☰</button>
+    <button class="hud-btn" id="btn-speed" aria-label="時間の進み方" data-i18n-aria="hud.speed">▶</button>
+    <button class="hud-btn" id="btn-menu" aria-label="メニュー" data-i18n-aria="hud.menu">☰</button>
   </header>
 
-  <nav class="side-rail" aria-label="お知らせ">
-    <button class="hud-btn event" id="btn-event" aria-label="街のできごと" hidden>📣</button>
-    <button class="hud-btn sites" id="btn-sites" aria-label="工事中の建物" hidden>🏗️</button>
-    <button class="hud-btn sites" id="btn-home" aria-label="おうちのお仕事" hidden>🏠</button>
-    <button class="hud-btn sites" id="btn-voices" aria-label="住民の声" hidden>📮</button>
+  <nav class="side-rail" aria-label="お知らせ" data-i18n-aria="rail.label">
+    <button class="hud-btn event" id="btn-event" aria-label="街のできごと" data-i18n-aria="rail.event" hidden>📣</button>
+    <button class="hud-btn sites" id="btn-sites" aria-label="工事中の建物" data-i18n-aria="rail.sites" hidden>🏗️</button>
+    <button class="hud-btn sites" id="btn-home" aria-label="おうちのお仕事" data-i18n-aria="rail.home" hidden>🏠</button>
+    <button class="hud-btn sites" id="btn-voices" aria-label="住民の声" data-i18n-aria="rail.voices" hidden>📮</button>
   </nav>
 
   <div class="hint-line" id="hint-line" role="status"></div>
@@ -44,21 +44,22 @@
   <div class="confirm" id="confirm" hidden>
     <p id="confirm-text"></p>
     <div class="confirm-actions">
-      <button class="btn ghost" id="confirm-no">やめる</button>
-      <button class="btn primary" id="confirm-yes">決定</button>
+      <button class="btn ghost" id="confirm-no" data-i18n="confirm.no">やめる</button>
+      <button class="btn primary" id="confirm-yes" data-i18n="confirm.yes">決定</button>
     </div>
     <button class="btn extra" id="confirm-extra" hidden></button>
   </div>
 
-  <button class="license-fab" id="btn-license"><span aria-hidden="true">📜</span>資格・仕事</button>
-  <button class="study-fab" id="btn-study"><span class="pencil" aria-hidden="true">✏️</span><span>勉強して<br />コインをかせぐ</span></button>
+  <button class="license-fab" id="btn-license"><span aria-hidden="true">📜</span><span data-i18n="fab.license">資格・仕事</span></button>
+  <button class="study-fab" id="btn-study"><span class="pencil" aria-hidden="true">✏️</span><span class="fab-text" data-i18n="fab.study">勉強して
+コインをかせぐ</span></button>
 
-  <nav class="toolbar" id="toolbar" aria-label="道具">
-    <button data-tool="inspect" class="on"><span aria-hidden="true">🔍</span>見る</button>
-    <button data-tool="land"><span aria-hidden="true">🗺️</span>土地</button>
-    <button data-tool="road"><span aria-hidden="true">🛣️</span>道路</button>
-    <button data-tool="build"><span aria-hidden="true">🏗️</span>建てる</button>
-    <button data-tool="remove"><span aria-hidden="true">🧹</span>撤去</button>
+  <nav class="toolbar" id="toolbar" aria-label="道具" data-i18n-aria="tool.label">
+    <button data-tool="inspect" class="on"><span aria-hidden="true">🔍</span><span data-i18n="tool.inspect">見る</span></button>
+    <button data-tool="land"><span aria-hidden="true">🗺️</span><span data-i18n="tool.land">土地</span></button>
+    <button data-tool="road"><span aria-hidden="true">🛣️</span><span data-i18n="tool.road">道路</span></button>
+    <button data-tool="build"><span aria-hidden="true">🏗️</span><span data-i18n="tool.build">建てる</span></button>
+    <button data-tool="remove"><span aria-hidden="true">🧹</span><span data-i18n="tool.remove">撤去</span></button>
   </nav>
 
   <div class="toast" id="toast" role="alert"></div>
