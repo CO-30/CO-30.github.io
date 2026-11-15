@@ -1,6 +1,6 @@
 // LIFE CITY service worker (generated at build)
-const CACHE = 'lifecity-93a8b2c6e5';
-const FILES = ["./","index.html","manifest.webmanifest","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","assets/index-33LHjfuP.js","assets/index-e8e1W-qk.css"];
+const CACHE = 'lifecity-daea11aaab';
+const FILES = ["./","index.html","manifest.webmanifest","favicon.svg","icons/apple-touch-icon.png","icons/icon-192.png","icons/icon-512.png","icons/maskable-512.png","assets/index-bK2HQi-E.js","assets/index-nAlAbrii.css"];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k.startsWith('lifecity-') && k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', (e) => {
