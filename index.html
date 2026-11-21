@@ -10,17 +10,26 @@
   <meta name="apple-mobile-web-app-title" content="LIFE CITY" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
-  <meta name="theme-color" content="#bfe3f0" />
+  <meta name="theme-color" content="#4F8FD0" />
   <meta name="description" content="学ぶ。働く。建てる。暮らす。街と一緒に成長する。" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <title>LIFE CITY</title>
-  <script type="module" crossorigin src="./assets/index-B4NoY6IW.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DKEjxkCr.css">
+  <style>#splash{z-index:90;background:linear-gradient(#4f8fd0 0%,#9cc6ec 22%,#f7e2c6 35%,#3f97bf 35.4%,#2f7da8 100%);transition:opacity .4s;position:fixed;top:0;bottom:0;left:0;right:0;overflow:hidden}#splash.out{opacity:0;pointer-events:none}.lc-logo-box{z-index:1;left:50%;top:calc(env(safe-area-inset-top,0px) + 70px);width:min(74vw,460px);position:fixed;transform:translate(-50%)}.lc-logo{width:100%;height:auto;display:block;overflow:visible}@media (min-width:760px) and (min-aspect-ratio:1){#splash{background:linear-gradient(#4f8fd0 0%,#9cc6ec 24%,#f7e2c6 42%,#3f97bf 42.4%,#2f7da8 100%)}.lc-logo-box{width:min(38vw,520px);top:max(64px,10vh);left:7vw;transform:none}}@media (orientation:landscape) and (max-height:520px){.lc-logo-box{left:4vw;top:calc(env(safe-area-inset-top,0px) + 40px);width:min(30vw,260px);transform:none}}@media (max-height:680px) and (orientation:portrait){.lc-logo-box{top:calc(env(safe-area-inset-top,0px) + 82px);width:min(56vw,360px)}}#splash .lc-logo .lg-l{transform-box:fill-box;transform-origin:50% 100%;animation:.38s cubic-bezier(.34,1.56,.64,1) both lc-rise;animation-delay:calc(.3s + var(--i) * 45ms)}#splash .lc-logo .lg-sun{animation:.7s cubic-bezier(.16,1,.3,1) .2s both lc-sun}#splash .lc-logo .lg-road{transform-box:fill-box;transform-origin:0;animation:.5s cubic-bezier(.16,1,.3,1) .25s both lc-road}#splash .lc-logo .lg-car{animation:1.6s cubic-bezier(.16,1,.3,1) .9s both lc-car}@keyframes lc-rise{0%{transform:scaleY(0)}to{transform:scaleY(1)}}@keyframes lc-sun{0%{transform:translateY(30px)}to{transform:none}}@keyframes lc-road{0%{transform:scaleX(0)}to{transform:none}}@keyframes lc-car{0%{transform:translate(-440px)}to{transform:none}}.sp-wait{opacity:0;gap:10px;animation:.4s 4s forwards sp-show;display:flex;position:absolute;bottom:18%;left:50%;transform:translate(-50%)}.sp-wait i{background:#fffaf0;border-radius:50%;width:10px;height:10px;animation:1.2s ease-in-out infinite sp-dot;box-shadow:0 1px 3px #141c3059}.sp-wait i:nth-child(2){animation-delay:.2s}.sp-wait i:nth-child(3){animation-delay:.4s}.sp-msg{color:#1f2a44;text-align:center;background:#fffaf0;border-radius:16px;width:min(88vw,460px);margin:0;padding:12px 16px;font:700 16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;position:absolute;bottom:12%;left:50%;transform:translate(-50%)}#sp-msg{z-index:95;color:#1f2a44;text-align:center;background:#fffaf0;border-radius:20px;width:min(90vw,480px);padding:16px 18px;font:400 16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;position:fixed;bottom:10%;left:50%;transform:translate(-50%);box-shadow:0 12px 30px #1f2a4440}#sp-msg[hidden]{display:none}#sp-msg .sp-msg-kid{margin:0 0 6px;font-size:18px;font-weight:700}#sp-msg .sp-msg-parent{color:#4a5672;margin:0 0 10px;font-size:14px}#sp-msg .sp-retry{color:#1f2a44;background:linear-gradient(#ffd56a,#f5ae24);border:0;border-radius:16px;min-height:52px;padding:0 22px;font:700 18px system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}#sp-msg .sp-retry:focus-visible{outline-offset:3px;outline:3px solid #1f2a44}.sp-sr{clip-path:inset(50%);white-space:nowrap;width:1px;height:1px;position:absolute;overflow:hidden}noscript p{z-index:96;color:#1f2a44;text-align:center;background:#fffaf0;border-radius:20px;width:min(90vw,480px);margin:0;padding:16px;font:700 16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Noto Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;position:fixed;bottom:10%;left:50%;transform:translate(-50%)}@keyframes sp-show{to{opacity:1}}@keyframes sp-dot{50%{transform:translateY(-6px)}}@media (prefers-reduced-motion:reduce){#splash,#splash *{transition:none!important;animation:none!important}.sp-wait{opacity:1}}</style>
+  <script type="module" crossorigin src="./assets/index-C_zQKVOA.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BaX2vksE.css">
 </head>
 <body>
+  <!-- v6.2: the picture shown before the game's code runs (the same logo as src/ui/logo.ts) -->
+  <div id="splash" aria-hidden="true">
+    <div class="lc-logo-box"><svg class="lc-logo" viewBox="-14 -44 600 186" aria-hidden="true" focusable="false"><defs><radialGradient id="lc-sun" cx="50%" cy="60%" r="60%"><stop offset="0" stop-color="#FFE59A"/><stop offset=".6" stop-color="#FFC23D"/><stop offset="1" stop-color="#F5A524"/></radialGradient><clipPath id="lc-above"><rect x="-20" y="-60" width="640" height="172"/></clipPath></defs><g clip-path="url(#lc-above)"><g class="lg-sun"><circle cx="273" cy="104" r="40" fill="url(#lc-sun)"/></g></g><g class="lg-l" style="--i:0"><g fill="#1F2A44" transform="translate(5 7)"><rect x="0" y="0" width="24" height="100" rx="5"/><rect x="0" y="76" width="64" height="24" rx="5"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><rect x="0" y="0" width="24" height="100" rx="5"/><rect x="0" y="76" width="64" height="24" rx="5"/></g><g fill="#FFFAF0"><rect x="0" y="0" width="24" height="100" rx="5"/><rect x="0" y="76" width="64" height="24" rx="5"/></g></g><g class="lg-l" style="--i:1"><g fill="#1F2A44" transform="translate(5 7)"><rect x="76" y="-18" width="30" height="118" rx="5"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><rect x="76" y="-18" width="30" height="118" rx="5"/></g><g fill="#FFFAF0"><rect x="76" y="-18" width="30" height="118" rx="5"/></g><g fill="#FFC23D"><rect x="86" y="-6" width="10" height="10" rx="2"/><rect x="86" y="14" width="10" height="10" rx="2"/></g></g><g class="lg-l" style="--i:2"><g fill="#1F2A44" transform="translate(5 7)"><rect x="118" y="0" width="24" height="100" rx="5"/><rect x="118" y="0" width="62" height="24" rx="5"/><rect x="118" y="40" width="50" height="22" rx="5"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><rect x="118" y="0" width="24" height="100" rx="5"/><rect x="118" y="0" width="62" height="24" rx="5"/><rect x="118" y="40" width="50" height="22" rx="5"/></g><g fill="#FFFAF0"><rect x="118" y="0" width="24" height="100" rx="5"/><rect x="118" y="0" width="62" height="24" rx="5"/><rect x="118" y="40" width="50" height="22" rx="5"/></g></g><g class="lg-l" style="--i:3"><g fill="#1F2A44" transform="translate(5 7)"><rect x="192" y="0" width="24" height="100" rx="5"/><rect x="192" y="0" width="62" height="24" rx="5"/><rect x="192" y="40" width="52" height="22" rx="5"/><rect x="192" y="76" width="62" height="24" rx="5"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><rect x="192" y="0" width="24" height="100" rx="5"/><rect x="192" y="0" width="62" height="24" rx="5"/><rect x="192" y="40" width="52" height="22" rx="5"/><rect x="192" y="76" width="62" height="24" rx="5"/></g><g fill="#FFFAF0"><rect x="192" y="0" width="24" height="100" rx="5"/><rect x="192" y="0" width="62" height="24" rx="5"/><rect x="192" y="40" width="52" height="22" rx="5"/><rect x="192" y="76" width="62" height="24" rx="5"/></g></g><g class="lg-l" style="--i:4"><g fill="#1F2A44" transform="translate(5 7)"><path d="M364 0 L334 0 A44 50 0 0 0 290 50 A44 50 0 0 0 334 100 L364 100 L364 76 L338 76 A24 26 0 0 1 314 50 A24 26 0 0 1 338 24 L364 24 Z"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><path d="M364 0 L334 0 A44 50 0 0 0 290 50 A44 50 0 0 0 334 100 L364 100 L364 76 L338 76 A24 26 0 0 1 314 50 A24 26 0 0 1 338 24 L364 24 Z"/></g><g fill="#FFFAF0"><path d="M364 0 L334 0 A44 50 0 0 0 290 50 A44 50 0 0 0 334 100 L364 100 L364 76 L338 76 A24 26 0 0 1 314 50 A24 26 0 0 1 338 24 L364 24 Z"/></g></g><g class="lg-l" style="--i:5"><g fill="#1F2A44" transform="translate(5 7)"><rect x="376" y="-30" width="30" height="130" rx="5"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><rect x="376" y="-30" width="30" height="130" rx="5"/></g><g fill="#FFFAF0"><rect x="376" y="-30" width="30" height="130" rx="5"/></g><g fill="#FFC23D"><rect x="386" y="-18" width="10" height="10" rx="2"/><rect x="386" y="2" width="10" height="10" rx="2"/><rect x="386" y="22" width="10" height="10" rx="2"/></g></g><g class="lg-l" style="--i:6"><g fill="#1F2A44" transform="translate(5 7)"><rect x="418" y="0" width="68" height="24" rx="5"/><rect x="440" y="0" width="24" height="100" rx="5"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><rect x="418" y="0" width="68" height="24" rx="5"/><rect x="440" y="0" width="24" height="100" rx="5"/></g><g fill="#FFFAF0"><rect x="418" y="0" width="68" height="24" rx="5"/><rect x="440" y="0" width="24" height="100" rx="5"/></g></g><g class="lg-l" style="--i:7"><g fill="#1F2A44" transform="translate(5 7)"><path d="M498 0 L526 0 L534 26 L542 0 L570 0 L546 54 L546 100 L522 100 L522 54 Z"/></g><g fill="none" stroke="#1F2A44" stroke-width="8" stroke-linejoin="round"><path d="M498 0 L526 0 L534 26 L542 0 L570 0 L546 54 L546 100 L522 100 L522 54 Z"/></g><g fill="#FFFAF0"><path d="M498 0 L526 0 L534 26 L542 0 L570 0 L546 54 L546 100 L522 100 L522 54 Z"/></g></g><g class="lg-road"><rect x="-14" y="112" width="600" height="16" rx="8" fill="#1F2A44"/><g fill="#FFFAF0"><rect x="4" y="118.5" width="18" height="3" rx="1.5"/><rect x="44" y="118.5" width="18" height="3" rx="1.5"/><rect x="84" y="118.5" width="18" height="3" rx="1.5"/><rect x="124" y="118.5" width="18" height="3" rx="1.5"/><rect x="164" y="118.5" width="18" height="3" rx="1.5"/><rect x="204" y="118.5" width="18" height="3" rx="1.5"/><rect x="244" y="118.5" width="18" height="3" rx="1.5"/><rect x="284" y="118.5" width="18" height="3" rx="1.5"/><rect x="324" y="118.5" width="18" height="3" rx="1.5"/><rect x="364" y="118.5" width="18" height="3" rx="1.5"/><rect x="404" y="118.5" width="18" height="3" rx="1.5"/><rect x="444" y="118.5" width="18" height="3" rx="1.5"/><rect x="484" y="118.5" width="18" height="3" rx="1.5"/><rect x="524" y="118.5" width="18" height="3" rx="1.5"/><rect x="564" y="118.5" width="18" height="3" rx="1.5"/></g></g><g transform="translate(420 98)"><g class="lg-car"><rect x="0" y="0" width="34" height="14" rx="6" fill="#FF6B4A" stroke="#1F2A44" stroke-width="3"/><rect x="7" y="-7" width="18" height="9" rx="3" fill="#FF6B4A" stroke="#1F2A44" stroke-width="3"/></g></g></svg></div>
+    <div class="sp-wait"><i></i><i></i><i></i></div>
+  </div>
+  <p class="sp-sr" id="sp-loading" role="status">よみこみちゅう… / Loading…</p>
+  <div id="sp-msg" role="alert" hidden></div>
+  <noscript><p>LIFE CITY は JavaScript を つかいます。ブラウザの せってい で JavaScript を オンに してね。<br>LIFE CITY needs JavaScript. Please turn it on in your browser settings.</p></noscript>
   <canvas id="city" aria-label="3Dの街" data-i18n-aria="app.canvas"></canvas>
 
-  <header class="hud" aria-live="polite">
+  <header class="hud" inert>
     <div class="hud-plate">
       <span class="hud-item coins" title="まちコイン" data-i18n-title="hud.coins"><i class="coin" aria-hidden="true"></i><b id="hud-coins">0</b></span>
       <span class="hud-item" title="人口" data-i18n-title="hud.pop"><span aria-hidden="true">👥</span><b id="hud-pop">0</b><small data-i18n="hud.people">人</small></span>
@@ -30,7 +39,7 @@
     <button class="hud-btn" id="btn-menu" aria-label="メニュー" data-i18n-aria="hud.menu">☰</button>
   </header>
 
-  <nav class="side-rail" aria-label="お知らせ" data-i18n-aria="rail.label">
+  <nav class="side-rail" aria-label="お知らせ" data-i18n-aria="rail.label" inert>
     <button class="hud-btn event" id="btn-event" aria-label="街のできごと" data-i18n-aria="rail.event" hidden>📣</button>
     <button class="hud-btn sites" id="btn-sites" aria-label="工事中の建物" data-i18n-aria="rail.sites" hidden>🏗️</button>
     <button class="hud-btn sites" id="btn-home" aria-label="おうちのお仕事" data-i18n-aria="rail.home" hidden>🏠</button>
@@ -38,11 +47,11 @@
     <button class="hud-btn sites repairs" id="btn-repairs" aria-label="こわれた建物" data-i18n-aria="rep.rail" hidden>🔧</button>
   </nav>
 
-  <div class="hint-line" id="hint-line" role="status"></div>
+  <div class="hint-line" id="hint-line" role="status" inert></div>
 
-  <div class="palette" id="palette" hidden></div>
+  <div class="palette" id="palette" hidden inert></div>
 
-  <div class="confirm" id="confirm" hidden>
+  <div class="confirm" id="confirm" hidden inert>
     <p id="confirm-text"></p>
     <div class="confirm-actions">
       <button class="btn ghost" id="confirm-no" data-i18n="confirm.no">やめる</button>
@@ -51,13 +60,13 @@
     <button class="btn extra" id="confirm-extra" hidden></button>
   </div>
 
-  <button class="island-fab" id="btn-islands"><span aria-hidden="true">🗺️</span><span data-i18n="isl.button">島めぐり</span></button>
-  <button class="walk-fab" id="btn-walk"><span aria-hidden="true">🚶</span><span data-i18n="fab.walk">さんぽ</span></button>
-  <button class="license-fab" id="btn-license"><span aria-hidden="true">📜</span><span data-i18n="fab.license">資格・仕事</span></button>
-  <button class="study-fab" id="btn-study"><span class="pencil" aria-hidden="true">✏️</span><span class="fab-text" data-i18n="fab.study">勉強して
+  <button class="island-fab" id="btn-islands" inert><span aria-hidden="true">🗺️</span><span data-i18n="isl.button">島めぐり</span></button>
+  <button class="walk-fab" id="btn-walk" inert><span aria-hidden="true">🚶</span><span data-i18n="fab.walk">さんぽ</span></button>
+  <button class="license-fab" id="btn-license" inert><span aria-hidden="true">📜</span><span data-i18n="fab.license">資格・仕事</span></button>
+  <button class="study-fab" id="btn-study" inert><span class="pencil" aria-hidden="true">✏️</span><span class="fab-text" data-i18n="fab.study">勉強して
 コインをかせぐ</span></button>
 
-  <nav class="toolbar" id="toolbar" aria-label="道具" data-i18n-aria="tool.label">
+  <nav class="toolbar" id="toolbar" aria-label="道具" data-i18n-aria="tool.label" inert>
     <button data-tool="inspect" class="on"><span aria-hidden="true">🔍</span><span data-i18n="tool.inspect">見る</span></button>
     <button data-tool="land"><span aria-hidden="true">🗺️</span><span data-i18n="tool.land">土地</span></button>
     <button data-tool="road"><span aria-hidden="true">🛣️</span><span data-i18n="tool.road">道路</span></button>
@@ -65,7 +74,7 @@
     <button data-tool="remove"><span aria-hidden="true">🧹</span><span data-i18n="tool.remove">撤去</span></button>
   </nav>
 
-  <div class="toast" id="toast" role="alert"></div>
+  <div class="toast" id="toast" role="alert" inert></div>
 
   <!-- sheets -->
   <div class="scrim" id="scrim" hidden></div>
